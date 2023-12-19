@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 8080
 const DB_NAME = process.env.DB_NAME
 const DB_PASS = process.env.DB_PASS
 
-const URL_CONNECTION= `mongodb+srv://gasbomy:yTHv9uvJVmv0ROri@cluster0.yuznrqf.mongodb.net/?gasbomyretryWrites=true&w=majority`
+const URL_CONNECTION = 'mongodb+srv://gasbomy:yTHv9uvJVmv0ROri@cluster0.yuznrqf.mongodb.net/test?retryWrites=true&w=majority';
 
 mongoose.connect(URL_CONNECTION,{})
 .then(()=>{
